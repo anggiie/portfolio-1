@@ -1,0 +1,267 @@
+@import url('https://fonts.googleapis.com/css?family=Simonetta&display=swap');
+*
+{
+    font-family: 'Simonetta', cursive, sans-serif;
+}
+html
+{
+    min-height: 100%;
+    position: relative;
+}
+body
+{
+    background-color: #30304e;
+}
+header 
+{
+    background: #131320;
+    background-size: cover;
+    height: 100vh;
+    color: whitesmoke;  
+    text-align: center;
+    border-radius: 0 50% 50% 0;
+}
+.title .fa-code 
+{
+    float: left;
+    color: silver;  
+    margin: .5rem 0 0 2rem;
+    text-decoration: none;
+    font-size: 2rem;
+}
+header h1
+{
+    font-size: 7rem;
+    font-weight: 500;
+    opacity: .6;
+    margin: 8.5rem;
+}
+header h2
+{
+    font-size: 3rem;
+    font-weight: 500;
+    opacity: .6;
+    margin: 8rem;
+}
+nav ul 
+{
+    justify-content: space-between;
+    flex-direction: row;
+    float: right;
+    
+}
+li
+{
+    margin: 0 1em;
+    list-style-type: none; 
+}
+a
+{ 
+    font-size: 1.8rem;
+    color: silver;  
+    text-shadow:1px 1px 3px rgba(255, 255, 255, 0.527);
+    margin: .5rem 2rem 0;
+}
+a:hover
+{
+    color: purple;
+}
+main .about-details
+{
+    display: flex;
+}
+.about-details
+{
+    padding: 10rem;
+    background: #131320;
+    background-size: cover;
+    height: 100vh;
+    color: whitesmoke;  
+    text-align: center;
+    border-radius: 50% 0  0 50%;
+}
+#about
+{
+    margin: 3rem;
+}
+#about h2
+{
+    font-size: 3rem;
+}
+#about p
+{
+    font-size: 1.5rem;
+}
+.portrait
+{
+    max-width: 80%;
+    border-radius: 0 30% 0 30%;
+    opacity: .5;
+}
+#skills
+{
+    background: #131320;
+    background-size: cover;
+    height: 100vh;
+    color: whitesmoke;  
+    text-align: center;
+    border-radius: 0 50% 50% 0;
+}
+#skills h2
+{
+    font-size: 4rem;
+}
+.Progress-bar
+{
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding:1rem;
+    width:auto;
+    height: auto;
+    margin:1rem;
+    border: 1px solid white;
+}
+.progress
+{
+    width: 500px;
+    margin: auto;
+    padding: auto;
+    position: center;
+}
+#formation
+{
+    background: #131320;
+    background-size: cover;
+    height: 100vh;
+    color: whitesmoke;  
+    text-align: center;
+    border-radius: 50% 0  0 50%;
+}
+.color
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 25rem;
+    padding-left:10%;
+}
+.article
+{
+    display: flex;
+    margin: 1% 9% 1% 9%;
+    border: 1px solid black;
+}
+.article-texte
+{
+    text-align: center;
+    padding: 0 10% 0 10%;
+    margin: auto;
+}
+#formation-reverse
+{
+    background: #131320;
+    background-size: cover;
+    height: 100vh;
+    color: whitesmoke;  
+    text-align: center;
+    border-radius: 0 50% 50% 0;
+}
+#portfolio
+{
+    background: #131320;
+    background-size: cover;
+    height: 100vh;
+    color: whitesmoke;  
+    text-align: center;
+    border-radius: 50% 0  0 50%;
+}
+#formation h2, #formation-reverse h2, #portfolio h2, #contact h2
+{
+    font-size: 3rem;
+}
+#contact
+{
+    background: #131320;
+    background-size: cover;
+    height: 90vh;
+    color: whitesmoke;  
+    text-align: center;
+    border-radius: 0 50% 50% 0;
+}
+.adress 
+{
+    text-align: center;
+    font-size: 18px;
+    padding: 5% 10% 0 10% ;
+}
+ul
+{
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+.box li
+{
+  display: inline-block;
+  margin: 6px;
+  list-style: none;
+}
+.box li a
+{
+  color: whitesmoke;
+  text-decoration: none;
+  font-size: 40px;
+  transition: all ease-in-out 250ms;
+}
+.box li a:hover{
+  color: purple;
+}
+footer
+{
+    color: whitesmoke;
+    font-size: 18px;
+    background-color: #131320;
+    width: auto;
+    padding: 10px;
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+@media screen and (max-width: 380px)
+{
+    header {height: auto;}
+    .image-responsive {width: 100%;}
+    section {flex-wrap: wrap;}
+    article {width: auto;}
+    .professional {display: none;}
+    .Progress-bar{
+        flex-direction:none;
+        flex-wrap:wrap;
+        overflow:scroll;
+    }
+    .progress{
+        flex-wrap:wrap;
+    }
+    
+}
+@-webkit-keyframes flash {
+	0% {
+		opacity: .4;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+@keyframes flash {
+	0% {
+		opacity: .4;
+	}
+	100% {
+		opacity: 1;
+	}
+}
